@@ -50,7 +50,7 @@ fn no_dead_code() {
     }
 
     #[bitfield(skip(convert))]
-    #[derive(BitfieldSpecifier)]
+    #[derive(Specifier)]
     struct C {
         #[skip(setters)]
         f: u8,
